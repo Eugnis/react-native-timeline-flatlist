@@ -23,8 +23,8 @@
   "peerDependencies": {
     "react-native": ">= 0.4"
   },
-  "author": "Watcharachai Kanjaikaew (https://github.com/thegamenicorus)",
-  "contributors": ["Eugnis (https://github.com/eugnis)"],
+  "author": "Eugnis (https://github.com/eugnis)",
+  "contributors": ["Watcharachai Kanjaikaew (https://github.com/thegamenicorus)", "Eugnis (https://github.com/eugnis)"],
   "license": "MIT",
   "bugs": {
     "url":
