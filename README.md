@@ -1,5 +1,7 @@
-# React Native Timeline Listview
+# React Native Timeline Flatlist
 Timeline component for React Native App work for Android and iOS
+
+It's a fork of [react-native-timeline-listview](https://github.com/thegamenicorus/react-native-timeline-listview) with some updates including FlatList, because old ListView is deprecated.
 
 ![untitled-1](https://cloud.githubusercontent.com/assets/21040043/24750025/8c8d044e-1aef-11e7-8fd7-7d64431af7e4.png)
 
@@ -23,13 +25,13 @@ Timeline component for React Native App work for Android and iOS
 
 ## Installation
 ```
-npm i react-native-timeline-listview --save
+npm i react-native-timeline-flatlist --save
 ```
 
 ## Basic Usage
 ![image2](https://cloud.githubusercontent.com/assets/21040043/24320617/6a7494ea-116b-11e7-9cf5-12244f5eec58.png)
 ```jsx
-import Timeline from 'react-native-timeline-listview'
+import Timeline from 'react-native-timeline-flatlist'
 
 constructor(){
     super()
@@ -50,7 +52,7 @@ render(){
     )
 }
 ```
-[see full basic example](https://github.com/thegamenicorus/react-native-timeline-listview/blob/master/examples/Example/pages/basicExample.js)
+[see full basic example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/basicExample.js)
 
 ## Custom
 ![image3](https://cloud.githubusercontent.com/assets/21040043/24320631/9df21a86-116b-11e7-8865-2631d35bc640.png)
@@ -72,7 +74,7 @@ render(){
     )
 }
 ```
-[see full custom example](https://github.com/thegamenicorus/react-native-timeline-listview/blob/master/examples/Example/pages/customExample.js)
+[see full custom example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/customExample.js)
 
 ## Circle Dot
 ![image4](https://cloud.githubusercontent.com/assets/21040043/24320644/f5bc5b0a-116b-11e7-9252-2c9fc2361dc9.png)
@@ -86,7 +88,7 @@ render(){
     )
 }
 ```
-[see full circle dot example](https://github.com/thegamenicorus/react-native-timeline-listview/blob/master/examples/Example/pages/dotExample.js)
+[see full circle dot example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/dotExample.js)
 
 ## Icon
 ![image5](https://cloud.githubusercontent.com/assets/21040043/24320654/1c5de27e-116c-11e7-95cc-750d55e001b8.png)
@@ -110,7 +112,7 @@ render(){
     )
 }
 ```
-[see full icon example](https://github.com/thegamenicorus/react-native-timeline-listview/blob/master/examples/Example/pages/iconExample.js)
+[see full icon example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/iconExample.js)
 
 ## Override Render
 ![image6](https://cloud.githubusercontent.com/assets/21040043/24320661/36fe76e8-116c-11e7-950f-2968aef312bb.png)
@@ -186,7 +188,7 @@ render(){
     )
 }
 ```
-[see full override render example](https://github.com/thegamenicorus/react-native-timeline-listview/blob/master/examples/Example/pages/overrideRenderExample.js)
+[see full override render example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/overrideRenderExample.js)
 
 ## Pull to refresh and load more
 ![rflm](https://cloud.githubusercontent.com/assets/21040043/26756369/304d2e7a-48cb-11e7-816d-66e8d40a97ee.png)
@@ -227,7 +229,7 @@ render(){
     )
 }
 ```
-[see full refresh and load more example](https://github.com/thegamenicorus/react-native-timeline-listview/blob/master/examples/Example/pages/refreshLoadMoreExample.js)
+[see full refresh and load more example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/refreshLoadMoreExample.js)
 
 ## Column Format
 ### Single Column Right
@@ -242,7 +244,7 @@ render(){
     )
 }
 ```
-[see full single column right example](https://github.com/thegamenicorus/react-native-timeline-listview/blob/master/examples/Example/pages/singleRightExample.js)
+[see full single column right example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/singleRightExample.js)
 
 ### Two Column
 ![simulator screen shot apr 6 2560 be 5 05 32 pm](https://cloud.githubusercontent.com/assets/21040043/24749638/0515f210-1aee-11e7-82af-082d93efb618.png)
@@ -256,7 +258,7 @@ render(){
     )
 }
 ```
-[see full two column example](https://github.com/thegamenicorus/react-native-timeline-listview/blob/master/examples/Example/pages/twoColumnExample.js)
+[see full two column example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/twoColumnExample.js)
 
 ### Time container hiding
 ![showTime](https://user-images.githubusercontent.com/6987730/35145888-fae0f1e2-fd3b-11e7-9571-2143342512c8.png)
