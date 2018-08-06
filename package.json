@@ -1,6 +1,6 @@
 {
-  "name": "react-native-timeline-listview",
-  "version": "0.2.3",
+  "name": "react-native-timeline-flatlist",
+  "version": "0.3.0",
   "description": "Timeline component for React Native",
   "main": "lib/index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:thegamenicorus/react-native-timeline-listview.git"
+    "url": "git@github.com:eugnis/react-native-timeline-flatlist.git"
   },
   "keywords": [
     "react-native",
     "timeline",
-    "listview",
+    "flatlist",
     "schedule",
     "react native component",
     "ios",
@@ -24,10 +24,11 @@
     "react-native": ">= 0.4"
   },
   "author": "Watcharachai Kanjaikaew (https://github.com/thegamenicorus)",
+  "contributors": ["Eugnis (https://github.com/eugnis)"]
   "license": "MIT",
   "bugs": {
     "url":
-      "https://github.com/thegamenicorus/react-native-timeline-listview/issues"
+      "https://github.com/eugnis/react-native-timeline-flatlist/issues"
   },
-  "homepage": "https://github.com/thegamenicorus/react-native-timeline-listview"
+  "homepage": "https://github.com/eugnis/react-native-timeline-flatlist"
 }
