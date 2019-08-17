@@ -1,17 +1,20 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
+ *
+ * @format
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   StyleSheet,
   Text,
   View,
-  Navigator, 
   TouchableOpacity
 } from 'react-native';
+import {Navigator} from 'react-native-deprecated-custom-components';
+
 
 import Menu from './pages/menu'
 import BasicExample from './pages/basicExample'
@@ -24,7 +27,7 @@ import SingleRightExample from './pages/singleRightExample'
 import TwoColumnExample from './pages/twoColumnExample'
 import RefreshLoadMore from './pages/refreshLoadMoreExample'
 
-export default class Example extends Component {
+export default class App extends Component {
   constructor(){
     super()
     this.renderScene = this.renderScene.bind(this)
@@ -64,7 +67,7 @@ export default class Example extends Component {
 										return null;
 									} else {
 										return (
-											<TouchableOpacity onPress={() => navigator.pop()}>
+											<TouchableOpacity key={`routeB_${index}`} onPress={() => navigator.pop()}>
 												<Text style={styles.back}>Back</Text>
 											</TouchableOpacity>
 										);
@@ -73,13 +76,13 @@ export default class Example extends Component {
 							RightButton: (route, navigator, index, navState) =>
 								{ return null },
 							Title: (route, navigator, index, navState) =>
-								{ return (<Text style={styles.title}>{route.title}</Text>); },
+								{ return (<Text key={`routeT_${index}`} style={styles.title}>{route.title}</Text>); },
 						}}
 						style={{backgroundColor: '#009688'}}
 					/>
     return (
       <Navigator
-        initialRoute = {{name:'menu', title:"Timeline Listview", index: 0}}
+        initialRoute = {{name:'menu', title:"Timeline Flatlist", index: 0}}
         renderScene = {this.renderScene}
 				navigationBar={NavigationBarRouteMapper}
       />

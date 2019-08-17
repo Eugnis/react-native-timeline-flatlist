@@ -10,7 +10,7 @@ import {
   Text,
   View
 } from 'react-native';
-import Timeline from 'react-native-timeline-listview'
+import Timeline from './react-native-timeline-flatlist.js'
 
 export default class Example extends Component {
   constructor(){
@@ -47,7 +47,7 @@ export default class Example extends Component {
           circleColor='rgba(0,0,0,0)'
           lineColor='rgb(45,156,219)'
           timeContainerStyle={{minWidth:52, marginTop: -5}}
-          timeStyle={{textAlign: 'center', backgroundColor:'#ff9797', color:'white', padding:5, borderRadius:13}}
+          timeStyle={{borderRadius: 130, overflow: 'hidden', textAlign: 'center', backgroundColor:'#ff9797', color:'white', padding:5, borderRadius:13}}
           descriptionStyle={{color:'gray'}}
           options={{
             style:{paddingTop:5}
