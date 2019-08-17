@@ -10,7 +10,7 @@ import {
   Text,
   View
 } from 'react-native';
-import Timeline from './react-native-timeline-flatlist.js'
+import Timeline from 'react-native-timeline-flatlist'
 
 export default class Example extends Component {
   constructor(){
