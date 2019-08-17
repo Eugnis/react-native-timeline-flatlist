@@ -1,6 +1,6 @@
 # React Native Timeline Flatlist
 [![npm version](https://badge.fury.io/js/react-native-timeline-flatlist.svg)](https://badge.fury.io/js/react-native-timeline-flatlist)
-[![Platform](https://img.shields.io/badge/react--native-%3C0.57-blue.svg)](http://facebook.github.io/react-native/)
+[![Platform](https://img.shields.io/badge/react--native-0.60.5-blue.svg)](http://facebook.github.io/react-native/)
 
 Timeline component for React Native App work for Android and iOS
 

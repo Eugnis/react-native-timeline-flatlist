@@ -1,6 +1,6 @@
 {
   "name": "react-native-timeline-flatlist",
-  "version": "0.3.1",
+  "version": "0.5",
   "description": "Timeline component for React Native",
   "main": "lib/index.js",
   "scripts": {
@@ -21,14 +21,16 @@
     "component"
   ],
   "peerDependencies": {
-    "react-native": ">= 0.4"
+    "react-native": ">= 0.58.2"
   },
   "author": "Eugnis (https://github.com/eugnis)",
-  "contributors": ["Watcharachai Kanjaikaew (https://github.com/thegamenicorus)", "Eugnis (https://github.com/eugnis)"],
+  "contributors": [
+    "Watcharachai Kanjaikaew (https://github.com/thegamenicorus)",
+    "Eugnis (https://github.com/eugnis)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/eugnis/react-native-timeline-flatlist/issues"
+    "url": "https://github.com/eugnis/react-native-timeline-flatlist/issues"
   },
   "homepage": "https://github.com/eugnis/react-native-timeline-flatlist"
 }
