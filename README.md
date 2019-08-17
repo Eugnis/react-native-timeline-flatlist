@@ -6,6 +6,8 @@ Timeline component for React Native App work for Android and iOS
 
 It's a fork of [react-native-timeline-listview](https://github.com/thegamenicorus/react-native-timeline-listview) with some updates including FlatList, because old ListView is deprecated.
 
+Examples in examples folder and on Expo https://expo.io/@eugnis/react-native-timeline-flatlist-examples
+
 ![untitled-1](https://cloud.githubusercontent.com/assets/21040043/24750025/8c8d044e-1aef-11e7-8fd7-7d64431af7e4.png)
 
 **Table of Contents**
