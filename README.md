@@ -315,6 +315,7 @@ render(){
 | icon | obj(image source) | null | timeline icon (innerCircle = 'color') |
 | style | object | null | custom styles of Timeline container |
 | listViewStyle | object | null | custom styles of inner ListView |
+| listViewContainerStyle | object | null | custom styles of inner ListView container |
 | timeStyle | object | null | custom styles of event time |
 | titleStyle | object | null | custom styles of event title |
 | descriptionStyle | object | null | custom styles of event description |
