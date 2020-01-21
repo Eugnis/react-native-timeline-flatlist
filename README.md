@@ -297,14 +297,14 @@ render(){
 | circleSize | int | same as circleSize of 'Timeline' | event circle size |
 | circleColor | string | same as circleColor of 'Timeline' | event circle color |
 | dotColor | string | same as dotColor of 'Timeline' | event dot color (innerCircle = 'dot') |
-| icon | obj(image source) | same as icon of 'Timeline' | event icon (innerCircle = 'color') |
+| icon | obj(image source) | same as icon of 'Timeline' | event icon (innerCircle = 'icon' or 'element') |
 | position | string | null | event side in 'two-column' layout : 'left', 'right' |
 
 #### Timeline:
 | Property | Type | Default | Description |
 |---------------|----------|-------------|----------------------------------------------------------------|
 | data | data object | null | timeline data |
-| innerCircle | string | null | timeline mode : 'none', 'dot', 'icon' |
+| innerCircle | string | null | timeline mode : 'none', 'dot', 'icon', 'element' |
 | separator | bool | true | render separator line of events |
 | columnFormat | string | 'single-left' | can be 'single-column-left', 'single-column-right', 'two-column' |
 | lineWidth | int | 2 | timeline line width  |
@@ -312,7 +312,7 @@ render(){
 | circleSize | int | 16 | timeline circle size |
 | circleColor | string | '#007AFF' | timeline circle color |
 | dotColor | string | 'white' | timeline dot color (innerCircle = 'dot') |
-| icon | obj(image source) | null | timeline icon (innerCircle = 'color') |
+| icon | obj(image source) | null | timeline icon (innerCircle = 'icon' or 'element') |
 | style | object | null | custom styles of Timeline container |
 | listViewStyle | object | null | custom styles of inner ListView |
 | timeStyle | object | null | custom styles of event time |
