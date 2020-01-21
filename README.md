@@ -321,6 +321,7 @@ render(){
 | iconStyle | object | null | custom styles of event icon |
 | separatorStyle | object | null | custom styles of separator |
 | rowContainerStyle | object | null | custom styles of event container |
+| eventContainerStyle | object | null | custom styles of the event part of the row | 
 | timeContainerStyle | object | null | custom styles of container of event time  |
 | detailContainerStyle| object | null | custom styles of container of event title and event description |
 | onEventPress | function(event) | null | function to be invoked when event was pressed |
