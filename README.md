@@ -291,7 +291,7 @@ render(){
 |---------------|----------|-------------|----------------------------------------------------------------|
 | time | string | null | event time |
 | title | string | null | event title |
-| description | string | null | event description |
+| description | string or object | null | event description |
 | lineWidth | int | same as lineWidth of 'Timeline' | event line width  |
 | lineColor | string | same as lineColor of 'Timeline' | event line color |
 | circleSize | int | same as circleSize of 'Timeline' | event circle size |
