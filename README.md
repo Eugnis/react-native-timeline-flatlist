@@ -291,20 +291,20 @@ render(){
 |---------------|----------|-------------|----------------------------------------------------------------|
 | time | string | null | event time |
 | title | string | null | event title |
-| description | string | null | event description |
+| description | string or object | null | event description |
 | lineWidth | int | same as lineWidth of 'Timeline' | event line width  |
 | lineColor | string | same as lineColor of 'Timeline' | event line color |
 | circleSize | int | same as circleSize of 'Timeline' | event circle size |
 | circleColor | string | same as circleColor of 'Timeline' | event circle color |
 | dotColor | string | same as dotColor of 'Timeline' | event dot color (innerCircle = 'dot') |
-| icon | obj(image source) | same as icon of 'Timeline' | event icon (innerCircle = 'color') |
+| icon | obj(image source) | same as icon of 'Timeline' | event icon (innerCircle = 'icon' or 'element') |
 | position | string | null | event side in 'two-column' layout : 'left', 'right' |
 
 #### Timeline:
 | Property | Type | Default | Description |
 |---------------|----------|-------------|----------------------------------------------------------------|
 | data | data object | null | timeline data |
-| innerCircle | string | null | timeline mode : 'none', 'dot', 'icon' |
+| innerCircle | string | null | timeline mode : 'none', 'dot', 'icon', 'element' |
 | separator | bool | true | render separator line of events |
 | columnFormat | string | 'single-left' | can be 'single-column-left', 'single-column-right', 'two-column' |
 | lineWidth | int | 2 | timeline line width  |
@@ -312,7 +312,7 @@ render(){
 | circleSize | int | 16 | timeline circle size |
 | circleColor | string | '#007AFF' | timeline circle color |
 | dotColor | string | 'white' | timeline dot color (innerCircle = 'dot') |
-| icon | obj(image source) | null | timeline icon (innerCircle = 'color') |
+| icon | obj(image source) | null | timeline icon (innerCircle = 'icon' or 'element') |
 | style | object | null | custom styles of Timeline container |
 | listViewStyle | object | null | custom styles of inner ListView |
 | listViewContainerStyle | object | null | custom styles of inner ListView container |
@@ -322,6 +322,7 @@ render(){
 | iconStyle | object | null | custom styles of event icon |
 | separatorStyle | object | null | custom styles of separator |
 | rowContainerStyle | object | null | custom styles of event container |
+| eventContainerStyle | object | null | custom styles of the event part of the row | 
 | timeContainerStyle | object | null | custom styles of container of event time  |
 | detailContainerStyle| object | null | custom styles of container of event title and event description |
 | onEventPress | function(event) | null | function to be invoked when event was pressed |
