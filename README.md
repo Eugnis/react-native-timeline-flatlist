@@ -1,6 +1,6 @@
 # React Native Timeline Flatlist
 [![npm version](https://badge.fury.io/js/react-native-timeline-flatlist.svg)](https://badge.fury.io/js/react-native-timeline-flatlist)
-[![Platform](https://img.shields.io/badge/react--native-0.60.5-blue.svg)](http://facebook.github.io/react-native/)
+[![Platform](https://img.shields.io/badge/react--native-0.61-blue.svg)](http://facebook.github.io/react-native/)
 
 Timeline component for React Native App work for Android and iOS
 
@@ -123,6 +123,19 @@ render(){
     )
 }
 ```
+
+Also you can pass any React element as icon or iconDefault:
+```
+this.data = [
+      ...
+      {time: '12:00', title: 'Custom rendered icon', icon: <Image
+      style={{width: 20, height: 20}}
+      source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}}
+    />},
+      ...
+    ]
+  } 
+  ```
 [see full icon example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/iconExample.js)
 
 ## Override Render
@@ -297,7 +310,7 @@ render(){
 | circleSize | int | same as circleSize of 'Timeline' | event circle size |
 | circleColor | string | same as circleColor of 'Timeline' | event circle color |
 | dotColor | string | same as dotColor of 'Timeline' | event dot color (innerCircle = 'dot') |
-| icon | obj(image source) | same as icon of 'Timeline' | event icon (innerCircle = 'icon' or 'element') |
+| icon | obj(image source) or React.Element | same as icon of 'Timeline' | event icon (innerCircle = 'icon' or 'element') |
 | position | string | null | event side in 'two-column' layout : 'left', 'right' |
 
 #### Timeline:
@@ -312,7 +325,7 @@ render(){
 | circleSize | int | 16 | timeline circle size |
 | circleColor | string | '#007AFF' | timeline circle color |
 | dotColor | string | 'white' | timeline dot color (innerCircle = 'dot') |
-| icon | obj(image source) | null | timeline icon (innerCircle = 'icon' or 'element') |
+| iconDefault (or icon) | obj(image source) or React.Element | same as icon of 'Timeline' | default event icon |
 | style | object | null | custom styles of Timeline container |
 | listViewStyle | object | null | custom styles of inner ListView |
 | listViewContainerStyle | object | null | custom styles of inner ListView container |
