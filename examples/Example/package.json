@@ -8,16 +8,16 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^34.0.1",
-    "react": "16.8.3",
-    "react-dom": "^16.8.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
+    "expo": "^36.0.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.1.tar.gz",
     "react-native-deprecated-custom-components": "^0.1.2",
-    "react-native-timeline-flatlist": "^0.5.0",
-    "react-native-web": "^0.11.4"
+    "react-native-timeline-flatlist": "^0.6.5",
+    "react-native-web": "^0.11.7"
   },
   "devDependencies": {
-    "babel-preset-expo": "^6.0.0"
+    "babel-preset-expo": "^8.0.0"
   },
   "private": true
 }

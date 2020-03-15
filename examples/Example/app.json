@@ -3,7 +3,6 @@
     "name": "Examples Timeline Flatlist",
     "slug": "react-native-timeline-flatlist-examples",
     "privacy": "public",
-    "sdkVersion": "34.0.0",
     "platforms": [
       "ios",
       "android",
