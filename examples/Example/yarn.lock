@@ -4732,10 +4732,10 @@ react-native-deprecated-custom-components@^0.1.2:
     react-timer-mixin "^0.13.2"
     rebound "^0.0.13"
 
-react-native-timeline-flatlist@^0.6.5:
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/react-native-timeline-flatlist/-/react-native-timeline-flatlist-0.6.5.tgz#e1b0ff36eaabfd9c03f4e402d1686cdb525e1a78"
-  integrity sha512-RuEl3uqk2jXXDY7R+iGBujgL/SwamC+c2QktxA9hSgJomqjVJm6gr/vRvq9vbkYy4mY++NcrB8cu5sNF89omuA==
+react-native-timeline-flatlist@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/react-native-timeline-flatlist/-/react-native-timeline-flatlist-0.7.0.tgz#f545609b8a8a1b0c3938ff39093770e801f461f0"
+  integrity sha512-EDAqZpyoSdb22xIcKkL496zkZ42WNZS8nMLjZFojmtIlTqYUgfQxiHj5/4DEI2jV7UbMDzHhxVcmiFVrClBkRg==
 
 react-native-view-shot@3.0.2:
   version "3.0.2"

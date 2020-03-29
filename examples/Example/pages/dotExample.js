@@ -31,7 +31,8 @@ export default class Example extends Component {
         <Timeline 
           style={styles.list}
           data={this.data}
-          circleSize={20}
+          circleSize={35}
+          dotSize={18}
           circleColor='rgb(45,156,219)'
           lineColor='rgb(45,156,219)'
           timeContainerStyle={{minWidth:52, marginTop: -5}}
