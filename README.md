@@ -325,6 +325,7 @@ render(){
 | circleSize | int | 16 | timeline circle size |
 | circleColor | string | '#007AFF' | timeline circle color |
 | dotColor | string | 'white' | timeline dot color (innerCircle = 'dot') |
+| dotSize | string | circleSize / 2 | timeline dot size (innerCircle = 'dot') |
 | iconDefault (or icon) | obj(image source) or React.Element | same as icon of 'Timeline' | default event icon |
 | style | object | null | custom styles of Timeline container |
 | listViewStyle | object | null | custom styles of inner ListView |
