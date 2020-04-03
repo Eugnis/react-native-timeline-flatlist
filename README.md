@@ -1,4 +1,5 @@
 # React Native Timeline Flatlist
+
 [![npm version](https://badge.fury.io/js/react-native-timeline-flatlist.svg)](https://badge.fury.io/js/react-native-timeline-flatlist)
 [![Platform](https://img.shields.io/badge/react--native-0.61-blue.svg)](http://facebook.github.io/react-native/)
 
@@ -13,6 +14,7 @@ Examples in examples folder and on Expo https://expo.io/@eugnis/react-native-tim
 ![untitled-1](https://cloud.githubusercontent.com/assets/21040043/24750025/8c8d044e-1aef-11e7-8fd7-7d64431af7e4.png)
 
 **Table of Contents**
+
 - [Installation](#installation)
 - Usage
   - [Basic usage](#basic-usage)
@@ -31,16 +33,21 @@ Examples in examples folder and on Expo https://expo.io/@eugnis/react-native-tim
 - [Shift problem](#shift-problem)
 
 ## Installation
+
 ```
 npm i react-native-timeline-flatlist --save
 ```
+
 or
+
 ```
 yarn add react-native-timeline-flatlist
 ```
 
 ## Basic Usage
+
 ![image2](https://cloud.githubusercontent.com/assets/21040043/24320617/6a7494ea-116b-11e7-9cf5-12244f5eec58.png)
+
 ```jsx
 import Timeline from 'react-native-timeline-flatlist'
 
@@ -63,10 +70,13 @@ render(){
     )
 }
 ```
+
 [see full basic example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/basicExample.js)
 
 ## Custom
+
 ![image3](https://cloud.githubusercontent.com/assets/21040043/24320631/9df21a86-116b-11e7-8865-2631d35bc640.png)
+
 ```jsx
 render(){
     return(
@@ -85,10 +95,13 @@ render(){
     )
 }
 ```
+
 [see full custom example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/customExample.js)
 
 ## Circle Dot
+
 ![image4](https://cloud.githubusercontent.com/assets/21040043/24320644/f5bc5b0a-116b-11e7-9252-2c9fc2361dc9.png)
+
 ```jsx
 render(){
     return(
@@ -99,10 +112,13 @@ render(){
     )
 }
 ```
+
 [see full circle dot example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/dotExample.js)
 
 ## Icon
+
 ![image5](https://cloud.githubusercontent.com/assets/21040043/24320654/1c5de27e-116c-11e7-95cc-750d55e001b8.png)
+
 ```jsx
 constructor(){
     super()
@@ -125,6 +141,7 @@ render(){
 ```
 
 Also you can pass any React element as icon or iconDefault:
+
 ```
 this.data = [
       ...
@@ -134,12 +151,15 @@ this.data = [
     />},
       ...
     ]
-  } 
-  ```
+  }
+```
+
 [see full icon example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/iconExample.js)
 
 ## Override Render
+
 ![image6](https://cloud.githubusercontent.com/assets/21040043/24320661/36fe76e8-116c-11e7-950f-2968aef312bb.png)
+
 ```jsx
 constructor(){
     super()
@@ -189,7 +209,7 @@ renderDetail(rowData, sectionID, rowID) {
     var desc = null
     if(rowData.description && rowData.imageUrl)
       desc = (
-        <View style={styles.descriptionContainer}>   
+        <View style={styles.descriptionContainer}>
           <Image source={{uri: rowData.imageUrl}} style={styles.image}/>
           <Text style={[styles.textDescription]}>{rowData.description}</Text>
         </View>
@@ -212,10 +232,13 @@ render(){
     )
 }
 ```
+
 [see full override render example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/overrideRenderExample.js)
 
 ## Pull to refresh and load more
+
 ![rflm](https://cloud.githubusercontent.com/assets/21040043/26756369/304d2e7a-48cb-11e7-816d-66e8d40a97ee.png)
+
 ```jsx
 
 onRefresh(){
@@ -253,11 +276,15 @@ render(){
     )
 }
 ```
+
 [see full refresh and load more example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/refreshLoadMoreExample.js)
 
 ## Column Format
+
 ### Single Column Right
+
 ![simulator screen shot apr 6 2560 be 5 19 51 pm](https://cloud.githubusercontent.com/assets/21040043/24749469/60a7869e-1aed-11e7-9c41-f87f866b2d8d.png)
+
 ```jsx
 render(){
     return(
@@ -268,10 +295,13 @@ render(){
     )
 }
 ```
+
 [see full single column right example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/singleRightExample.js)
 
 ### Two Column
+
 ![simulator screen shot apr 6 2560 be 5 05 32 pm](https://cloud.githubusercontent.com/assets/21040043/24749638/0515f210-1aee-11e7-82af-082d93efb618.png)
+
 ```jsx
 render(){
     return(
@@ -282,10 +312,13 @@ render(){
     )
 }
 ```
+
 [see full two column example](https://github.com/Eugnis/react-native-timeline-flatlist/blob/master/examples/Example/pages/twoColumnExample.js)
 
 ### Time container hiding
+
 ![showTime](https://user-images.githubusercontent.com/6987730/35145888-fae0f1e2-fd3b-11e7-9571-2143342512c8.png)
+
 ```jsx
 render(){
     return(
@@ -297,57 +330,59 @@ render(){
 }
 ```
 
-
 ## Configuration
+
 #### Data Object:
-| Property | Type | Default | Description |
-|---------------|----------|-------------|----------------------------------------------------------------|
-| time | string | null | event time |
-| title | string | null | event title |
-| description | string or object | null | event description |
-| lineWidth | int | same as lineWidth of 'Timeline' | event line width  |
-| lineColor | string | same as lineColor of 'Timeline' | event line color |
-| eventContainerStyle | object | null | custom styles of line |
-| circleSize | int | same as circleSize of 'Timeline' | event circle size |
-| circleColor | string | same as circleColor of 'Timeline' | event circle color |
-| dotColor | string | same as dotColor of 'Timeline' | event dot color (innerCircle = 'dot') |
-| icon | obj(image source) or React.Element | same as icon of 'Timeline' | event icon (innerCircle = 'icon' or 'element') |
-| position | string | null | event side in 'two-column' layout : 'left', 'right' |
+
+| Property            | Type                               | Default                           | Description                                         |
+| ------------------- | ---------------------------------- | --------------------------------- | --------------------------------------------------- |
+| time                | string                             | null                              | event time                                          |
+| title               | string                             | null                              | event title                                         |
+| description         | string or object                   | null                              | event description                                   |
+| lineWidth           | int                                | same as lineWidth of 'Timeline'   | event line width                                    |
+| lineColor           | string                             | same as lineColor of 'Timeline'   | event line color                                    |
+| eventContainerStyle | object                             | null                              | custom styles of line                               |
+| circleSize          | int                                | same as circleSize of 'Timeline'  | event circle size                                   |
+| circleColor         | string                             | same as circleColor of 'Timeline' | event circle color                                  |
+| dotColor            | string                             | same as dotColor of 'Timeline'    | event dot color (innerCircle = 'dot')               |
+| icon                | obj(image source) or React.Element | same as icon of 'Timeline'        | event icon (innerCircle = 'icon' or 'element')      |
+| position            | string                             | null                              | event side in 'two-column' layout : 'left', 'right' |
 
 #### Timeline:
-| Property | Type | Default | Description |
-|---------------|----------|-------------|----------------------------------------------------------------|
-| data | data object | null | timeline data |
-| innerCircle | string | null | timeline mode : 'none', 'dot', 'icon', 'element' |
-| separator | bool | true | render separator line of events |
-| columnFormat | string | 'single-left' | can be 'single-column-left', 'single-column-right', 'two-column' |
-| lineWidth | int | 2 | timeline line width  |
-| lineColor | string | '#007AFF' | timeline line color |
-| circleSize | int | 16 | timeline circle size |
-| circleColor | string | '#007AFF' | timeline circle color |
-| dotColor | string | 'white' | timeline dot color (innerCircle = 'dot') |
-| dotSize | int | circleSize / 2 | timeline dot size (innerCircle = 'dot') |
-| iconDefault (or icon) | obj(image source) or React.Element | same as icon of 'Timeline' | default event icon |
-| style | object | null | custom styles of Timeline container |
-| listViewStyle | object | null | custom styles of inner ListView |
-| listViewContainerStyle | object | null | custom styles of inner ListView container |
-| timeStyle | object | null | custom styles of event time |
-| titleStyle | object | null | custom styles of event title |
-| descriptionStyle | object | null | custom styles of event description |
-| iconStyle | object | null | custom styles of event icon |
-| separatorStyle | object | null | custom styles of separator |
-| rowContainerStyle | object | null | custom styles of event container |
-| eventContainerStyle | object | null | custom styles of the event part of the row (line) | 
-| timeContainerStyle | object | null | custom styles of container of event time  |
-| detailContainerStyle| object | null | custom styles of container of event title and event description |
-| onEventPress | function(event) | null | function to be invoked when event was pressed |
-| renderTime | function(rowData, sectionID, rowID) | null | custom render event time |
-| renderDetail | function(rowData, sectionID, rowID) | null | custom render event title and event description |
-| renderCircle | function(rowData, sectionID, rowID) | null | custom render circle |
-| renderFullLine | bool | false | render event border on last timeline item |
-| options | object | null | ListView properties|
-| showTime | boolean | true | Time container options|
 
+| Property               | Type                                | Default                    | Description                                                      |
+| ---------------------- | ----------------------------------- | -------------------------- | ---------------------------------------------------------------- |
+| data                   | data object                         | null                       | timeline data                                                    |
+| innerCircle            | string                              | null                       | timeline mode : 'none', 'dot', 'icon', 'element'                 |
+| separator              | bool                                | true                       | render separator line of events                                  |
+| columnFormat           | string                              | 'single-left'              | can be 'single-column-left', 'single-column-right', 'two-column' |
+| lineWidth              | int                                 | 2                          | timeline line width                                              |
+| lineColor              | string                              | '#007AFF'                  | timeline line color                                              |
+| circleSize             | int                                 | 16                         | timeline circle size                                             |
+| circleColor            | string                              | '#007AFF'                  | timeline circle color                                            |
+| dotColor               | string                              | 'white'                    | timeline dot color (innerCircle = 'dot')                         |
+| dotSize                | int                                 | circleSize / 2             | timeline dot size (innerCircle = 'dot')                          |
+| iconDefault (or icon)  | obj(image source) or React.Element  | same as icon of 'Timeline' | default event icon                                               |
+| style                  | object                              | null                       | custom styles of Timeline container                              |
+| listViewStyle          | object                              | null                       | custom styles of inner ListView                                  |
+| listViewContainerStyle | object                              | null                       | custom styles of inner ListView container                        |
+| timeStyle              | object                              | null                       | custom styles of event time                                      |
+| titleStyle             | object                              | null                       | custom styles of event title                                     |
+| descriptionStyle       | object                              | null                       | custom styles of event description                               |
+| iconStyle              | object                              | null                       | custom styles of event icon                                      |
+| separatorStyle         | object                              | null                       | custom styles of separator                                       |
+| rowContainerStyle      | object                              | null                       | custom styles of event container                                 |
+| eventContainerStyle    | object                              | null                       | custom styles of the event part of the row (line)                |
+| eventDetailStyle       | object                              | null                       | custom styles of the event detail part of the row (line)         |
+| timeContainerStyle     | object                              | null                       | custom styles of container of event time                         |
+| detailContainerStyle   | object                              | null                       | custom styles of container of event title and event description  |
+| onEventPress           | function(event)                     | null                       | function to be invoked when event was pressed                    |
+| renderTime             | function(rowData, sectionID, rowID) | null                       | custom render event time                                         |
+| renderDetail           | function(rowData, sectionID, rowID) | null                       | custom render event title and event description                  |
+| renderCircle           | function(rowData, sectionID, rowID) | null                       | custom render circle                                             |
+| renderFullLine         | bool                                | false                      | render event border on last timeline item                        |
+| options                | object                              | null                       | ListView properties                                              |
+| showTime               | boolean                             | true                       | Time container options                                           |
 
 ## Shift problem
 
