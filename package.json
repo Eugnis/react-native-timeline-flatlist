@@ -1,6 +1,6 @@
 {
   "name": "react-native-timeline-flatlist",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Timeline component for React Native",
   "main": "lib/index.js",
   "scripts": {
