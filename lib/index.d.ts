@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleProp, ViewStyle } from "react-native";
+import { StyleProp, ImageStyle, TextStyle, ViewStyle, FlatListProps } from "react-native";
 
 declare module "react-native-timeline-flatlist" {
   type Data = {
@@ -8,19 +8,19 @@ declare module "react-native-timeline-flatlist" {
     description?: any;
     lineWidth?: number;
     lineColor?: string;
-    eventContainerStyle?: any;
+    eventContainerStyle?: StyleProp<ViewStyle>;
     circleSize?: number;
     circleColor?: string;
     dotColor?: string;
     icon?: string | React.ReactNode;
-    position?: string;
+    position?: 'left' | 'right';
   };
 
   interface TimelineProps {
     data: Data[] | any;
-    innerCircle?: string;
+    innerCircle?: 'none' | 'icon' | 'dot' | 'element';
     separator?: boolean;
-    columnFormat?: string;
+    columnFormat?: 'single-column-left' | 'single-column-right' | 'two-column';
     lineWidth?: number;
     lineColor?: string;
     circleSize?: number;
@@ -29,18 +29,19 @@ declare module "react-native-timeline-flatlist" {
     dotSize?: number;
     iconDefault?: string | React.ReactNode;
     style?: StyleProp<ViewStyle>;
-    listViewStyle?: any;
-    listViewContainerStyle?: any;
-    timeStyle?: any;
-    titleStyle?: any;
-    descriptionStyle?: any;
-    iconStyle?: any;
-    separatorStyle?: any;
-    rowContainerStyle?: any;
-    eventContainerStyle?: any;
-    eventDetailStyle?: any;
-    timeContainerStyle?: any;
-    detailContainerStyle?: any;
+    circleStyle?: StyleProp<ViewStyle>
+    listViewStyle?: StyleProp<ViewStyle>;
+    listViewContainerStyle?: StyleProp<ViewStyle>;
+    timeStyle?: StyleProp<TextStyle>;
+    titleStyle?: StyleProp<TextStyle>;
+    descriptionStyle?: StyleProp<TextStyle>;
+    iconStyle?: StyleProp<ImageStyle>;
+    separatorStyle?: StyleProp<ViewStyle>;
+    rowContainerStyle?: StyleProp<ViewStyle>;
+    eventContainerStyle?: StyleProp<ViewStyle>;
+    eventDetailStyle?: StyleProp<ViewStyle>;
+    timeContainerStyle?: StyleProp<ViewStyle>;
+    detailContainerStyle?: StyleProp<ViewStyle>;
     onEventPress?: (event: Event) => any;
     renderTime?: (rowData: Data | any, sectionID: number, rowID: number) => any;
     renderDetail?: (
@@ -54,7 +55,7 @@ declare module "react-native-timeline-flatlist" {
       rowID: number
     ) => any;
     renderFullLine?: boolean;
-    options?: any;
+    options?: FlatListProps<Data>;
     showTime?: boolean;
   }
 
