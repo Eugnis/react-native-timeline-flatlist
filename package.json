@@ -1,6 +1,6 @@
 {
   "name": "react-native-timeline-flatlist",
-  "version": "0.7.2",
+  "version": "0.7.5",
   "description": "Timeline component for React Native",
   "main": "lib/index.js",
   "scripts": {
@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/eugnis/react-native-timeline-flatlist/issues"
   },
-  "homepage": "https://github.com/eugnis/react-native-timeline-flatlist"
+  "homepage": "https://github.com/eugnis/react-native-timeline-flatlist",
+  "dependencies": {
+    "react-native-timeline-flatlist": "^0.7.5"
+  }
 }
