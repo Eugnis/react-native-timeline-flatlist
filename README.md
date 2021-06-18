@@ -163,7 +163,7 @@ this.data = [
 ```jsx
 constructor(){
     super()
-    this.renderEvent = this.renderEvent.bind(this)
+    this.renderDetail = this.renderDetail.bind(this)
 
     this.data = [
       {
@@ -227,7 +227,7 @@ render(){
     return(
         <Timeline
           //..other props
-          renderEvent={this.renderEvent}
+          renderDetail={this.renderDetail}
         />
     )
 }
