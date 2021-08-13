@@ -57,6 +57,7 @@ declare module "react-native-timeline-flatlist" {
     renderFullLine?: boolean;
     options?: FlatListProps<Data>;
     showTime?: boolean;
+    isUsingFlatlist?: boolean;
   }
 
   export default class Timeline extends React.Component<TimelineProps> {}
