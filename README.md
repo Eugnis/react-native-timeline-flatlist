@@ -91,6 +91,7 @@ render(){
           options={{
             style:{paddingTop:5}
           }}
+          isUsingFlatlist={true}
         />
     )
 }
@@ -383,6 +384,7 @@ render(){
 | renderFullLine         | bool                                | false                      | render event border on last timeline item                        |
 | options                | object                              | null                       | ListView properties                                              |
 | showTime               | boolean                             | true                       | Time container options                                           |
+| isUsingFlatlist        | boolean                             | false                      | Render inner components in Flatlist (if false - render in View)  |
 
 ## Shift problem
 
