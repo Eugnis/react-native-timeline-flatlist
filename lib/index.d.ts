@@ -14,6 +14,7 @@ declare module "react-native-timeline-flatlist" {
     dotColor?: string;
     icon?: string | React.ReactNode;
     position?: 'left' | 'right';
+    rowContainerStyle?: StyleProp<ViewStyle>;
   };
 
   interface TimelineProps {
