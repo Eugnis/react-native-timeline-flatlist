@@ -43,19 +43,11 @@ declare module "react-native-timeline-flatlist" {
     timeContainerStyle?: StyleProp<ViewStyle>;
     detailContainerStyle?: StyleProp<ViewStyle>;
     onEventPress?: (event: Event) => any;
-    renderTime?: (rowData: Data | any, sectionID: number, rowID: number) => any;
-    renderDetail?: (
-      rowData: Data | any,
-      sectionID: number,
-      rowID: number
-    ) => any;
-    renderCircle?: (
-      rowData: Data | any,
-      sectionID: number,
-      rowID: number
-    ) => any;
+    renderTime?: (rowData: Data | any, rowID: number) => any;
+    renderDetail?: (rowData: Data | any, rowID: number) => any;
+    renderCircle?: (rowData: Data | any, rowID: number) => any;
     renderFullLine?: boolean;
-    options?: FlatListProps<Data>;
+    options?: Partial<FlatListProps<Data>>;
     showTime?: boolean;
     isUsingFlatlist?: boolean;
   }
