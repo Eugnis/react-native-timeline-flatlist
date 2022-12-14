@@ -1,7 +1,7 @@
-import React from "react";
-import { StyleProp, ImageStyle, TextStyle, ViewStyle, FlatListProps } from "react-native";
+import React from 'react';
+import { StyleProp, ImageStyle, TextStyle, ViewStyle, FlatListProps } from 'react-native';
 
-declare module "react-native-timeline-flatlist" {
+declare module 'react-native-timeline-flatlist' {
   type Data = {
     time?: string;
     title?: string;
@@ -22,6 +22,7 @@ declare module "react-native-timeline-flatlist" {
     separator?: boolean;
     columnFormat?: 'single-column-left' | 'single-column-right' | 'two-column';
     lineWidth?: number;
+    lineStyle?: 'solid' | 'dashed' | 'dotted';
     lineColor?: string;
     circleSize?: number;
     circleColor?: string;
@@ -29,7 +30,7 @@ declare module "react-native-timeline-flatlist" {
     dotSize?: number;
     iconDefault?: string | React.ReactNode;
     style?: StyleProp<ViewStyle>;
-    circleStyle?: StyleProp<ViewStyle>
+    circleStyle?: StyleProp<ViewStyle>;
     listViewStyle?: StyleProp<ViewStyle>;
     listViewContainerStyle?: StyleProp<ViewStyle>;
     timeStyle?: StyleProp<TextStyle>;
