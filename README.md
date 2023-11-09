@@ -385,6 +385,7 @@ render(){
 | options                | object                              | null                       | ListView properties                                              |
 | showTime               | boolean                             | true                       | Time container options                                           |
 | isUsingFlatlist        | boolean                             | false                      | Render inner components in Flatlist (if false - render in View)  |
+| scrollEnabled          | boolean                             | true                       | When false, the content does not scroll.                         |
 
 ## Shift problem
 
