@@ -1,23 +1,25 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "timeline-flatlist-example",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "^36.0.0",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.1.tar.gz",
-    "react-native-deprecated-custom-components": "^0.1.2",
-    "react-native-timeline-flatlist": "^0.7.1",
-    "react-native-web": "^0.11.7"
+    "expo": "~54.0.0",
+    "expo-router": "~4.0.0",
+    "expo-status-bar": "~2.0.0",
+    "react": "18.3.1",
+    "react-native": "0.76.6",
+    "react-native-safe-area-context": "~4.14.0",
+    "react-native-screens": "~4.4.0",
+    "react-native-timeline-flatlist": "file:../.."
   },
   "devDependencies": {
-    "babel-preset-expo": "^8.0.0"
+    "@babel/core": "^7.25.0"
   },
   "private": true
 }

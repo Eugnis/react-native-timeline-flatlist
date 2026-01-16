@@ -50,6 +50,7 @@ declare module "react-native-timeline-flatlist" {
     options?: Partial<FlatListProps<Data>>;
     showTime?: boolean;
     isUsingFlatlist?: boolean;
+    isAllowFontScaling?: boolean;
   }
 
   export default class Timeline extends React.Component<TimelineProps> {}

@@ -1,6 +1,6 @@
 {
   "name": "react-native-timeline-flatlist",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Timeline component for React Native",
   "main": "lib/index.js",
   "scripts": {
@@ -21,7 +21,8 @@
     "component"
   ],
   "peerDependencies": {
-    "react-native": ">= 0.58.2"
+    "react": ">= 17.0.0",
+    "react-native": ">= 0.64.0"
   },
   "author": "Eugnis (https://github.com/eugnis)",
   "contributors": [
