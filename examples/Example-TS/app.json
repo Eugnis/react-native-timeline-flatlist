@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Timeline Flatlist Examples TS",
+    "slug": "examples-ts-react-native-timeline",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "timeline-example-ts",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "description": "TypeScript Examples for React Native Timeline Flatlist",
+    "githubUrl": "https://github.com/Eugnis/react-native-timeline-flatlist",
+    "extra": {
+      "eas": {
+        "projectId": "66d81230-ac02-4397-903a-7fc594d87f4f"
+      }
+    },
+    "owner": "eugnis"
+  }
+}
