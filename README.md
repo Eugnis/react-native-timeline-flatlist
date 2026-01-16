@@ -1,13 +1,13 @@
 # React Native Timeline Flatlist
 
 [![npm version](https://badge.fury.io/js/react-native-timeline-flatlist.svg)](https://badge.fury.io/js/react-native-timeline-flatlist)
-[![Platform](https://img.shields.io/badge/react--native-0.61-blue.svg)](http://facebook.github.io/react-native/)
+[![Platform](https://img.shields.io/badge/react--native-0.81-blue.svg)](http://facebook.github.io/react-native/)
 
 Timeline component for React Native App work for Android and iOS
 
 It's a fork of [react-native-timeline-listview](https://github.com/thegamenicorus/react-native-timeline-listview) with some updates including FlatList, because old ListView is deprecated.
 
-Examples in examples folder and on Expo https://expo.io/@eugnis/react-native-timeline-flatlist-examples
+Examples in examples folder
 
 [DEMO HERE](https://snack.expo.io/@eugnis/eaae28)
 
