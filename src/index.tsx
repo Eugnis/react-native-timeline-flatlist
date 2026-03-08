@@ -487,7 +487,7 @@ export default class Timeline extends PureComponent<TimelineProps, TimelineState
         const dotStyle: ViewStyle = {
           height: dotSize,
           width: dotSize,
-          borderRadius: circleSize / 4,
+          borderRadius: dotSize / 2,
           backgroundColor:
             rowData.dotColor ?? this.props.dotColor ?? defaultDotColor,
         };
