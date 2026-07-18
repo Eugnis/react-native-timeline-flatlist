@@ -1,0 +1,39 @@
+name: Publish to npm
+
+# Publishes automatically when a GitHub Release is published.
+# Uses npm Trusted Publishing (OIDC) — configure once on npmjs.com:
+#   package Settings -> Trusted Publisher -> GitHub Actions
+#   repository: Eugnis/react-native-timeline-flatlist, workflow: publish.yml
+# No NPM_TOKEN secret is needed with trusted publishing.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # required for npm provenance / trusted publishing
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: 'https://registry.npmjs.org'
+
+      # Trusted publishing requires npm >= 11.5
+      - run: npm install -g npm@latest
+
+      - run: npm ci
+
+      - run: npm test
+
+      - run: npx tsc --noEmit -p tsconfig.json
+
+      # prepublishOnly runs the tsc build; provenance is attached automatically
+      - run: npm publish
