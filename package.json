@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eugnis/react-native-timeline-flatlist.git"
+    "url": "git+https://github.com/Eugnis/react-native-timeline-flatlist.git"
   },
   "keywords": [
     "react-native",
@@ -53,9 +53,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eugnis/react-native-timeline-flatlist/issues"
+    "url": "https://github.com/Eugnis/react-native-timeline-flatlist/issues"
   },
-  "homepage": "https://github.com/eugnis/react-native-timeline-flatlist",
+  "homepage": "https://github.com/Eugnis/react-native-timeline-flatlist",
   "files": [
     "lib",
     "src"
