@@ -73,7 +73,10 @@ export default class Timeline extends PureComponent<TimelineProps, TimelineState
     renderDetail: (rowData: Data, rowID: number) => ReactNode;
     renderCircle: (rowData: Data, rowID: number) => ReactNode;
     renderEvent: (rowData: Data, rowID: number) => ReactNode;
+    private _isMounted;
     constructor(props: TimelineProps);
+    componentDidMount(): void;
+    componentWillUnmount(): void;
     static getDerivedStateFromProps(nextProps: TimelineProps, prevState: TimelineState): Partial<TimelineState> | null;
     private _keyExtractor;
     render(): ReactNode;

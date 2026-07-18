@@ -121,6 +121,8 @@ export default class Timeline extends PureComponent<TimelineProps, TimelineState
   renderCircle: (rowData: Data, rowID: number) => ReactNode;
   renderEvent: (rowData: Data, rowID: number) => ReactNode;
 
+  private _isMounted = false;
+
   constructor(props: TimelineProps) {
     super(props);
 
@@ -140,6 +142,14 @@ export default class Timeline extends PureComponent<TimelineProps, TimelineState
       x: 0,
       width: 0,
     };
+  }
+
+  componentDidMount(): void {
+    this._isMounted = true;
+  }
+
+  componentWillUnmount(): void {
+    this._isMounted = false;
   }
 
   static getDerivedStateFromProps(
@@ -182,7 +192,7 @@ export default class Timeline extends PureComponent<TimelineProps, TimelineState
               this.props.listViewContainerStyle,
             ]}
           >
-            {this.state.data.map((item, index) => (
+            {(this.state.data ?? []).map((item, index) => (
               <View key={this._keyExtractor(item, index)}>
                 {this._renderItem({ item, index })}
               </View>
@@ -290,7 +300,7 @@ export default class Timeline extends PureComponent<TimelineProps, TimelineState
     const columnSidePadding = rowData.columnSidePadding ?? this.props.columnSidePadding;
     const isLast = this.props.renderFullLine
       ? !this.props.renderFullLine
-      : this.state.data.slice(-1)[0] === rowData;
+      : this.state.data?.slice(-1)[0] === rowData;
     const lineColor = isLast
       ? "rgba(0,0,0,0)"
       : rowData.lineColor ?? this.props.lineColor;
@@ -349,7 +359,7 @@ export default class Timeline extends PureComponent<TimelineProps, TimelineState
           rowData.eventContainerStyle,
         ]}
         onLayout={(evt: LayoutChangeEvent) => {
-          if (!this.state.x && !this.state.width) {
+          if (this._isMounted && !this.state.x && !this.state.width) {
             const { x, width } = evt.nativeEvent.layout;
             this.setState({ x, width });
           }
